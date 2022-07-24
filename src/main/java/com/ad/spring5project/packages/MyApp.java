@@ -10,6 +10,7 @@ import java.util.List;
 @RequestMapping(value = "/api")
 public class MyApp {
 
+
     @GetMapping("/")
     public Student helloExample(){
         return new Student(1,"ADwait","IT");
