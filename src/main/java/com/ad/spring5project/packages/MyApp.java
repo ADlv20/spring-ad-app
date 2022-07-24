@@ -10,7 +10,6 @@ import java.util.List;
 @RequestMapping(value = "/api")
 public class MyApp {
 
-
     @GetMapping("/")
     public Student helloExample(){
         return new Student(1,"ADwait","IT");
@@ -24,5 +23,10 @@ public class MyApp {
                 new Student(1,"wait","Mech"),
                 new Student(1,"lucky","Extc")
         );
+    }
+
+    @GetMapping("/stu")
+    public Student student(){
+        return new Student(1,"ADwait","IT");
     }
 }
